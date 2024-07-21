@@ -1,13 +1,11 @@
 
-export default function Body(){
+
+export default function Body({body_text = 'default', blog_title="undefined", img_src}){
     return(
-        <div className="hp-body border-t border-secondary flex flex-col items-center w-full max-w-4xl px-4 py-8">
-        <p className="hp-body-text text-sm text-justify text-secondary">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus ultricies fringilla. Vivamus rutrum pretium dolor, nec convallis ante suscipit quis. Vestibulum ut lacus a felis gravida pulvinar eu sed ipsum. Quisque cursus rhoncus ligula, eget aliquam erat lacinia id. Morbi eu dictum tortor. Morbi auctor est ut risus gravida, at placerat ipsum congue. Vestibulum dignissim eu libero eget sodales. Aenean orci tortor, porttitor a accumsan non, iaculis eu augue. Aenean vel volutpat risus. Mauris ac tortor at urna sagittis interdum. Curabitur pharetra lorem libero, eu auctor nisl hendrerit id. In ac consectetur sapien. Curabitur pretium neque blandit, bibendum elit a, efficitur turpis. Mauris vitae interdum metus, eget convallis libero. Pellentesque ac nunc tempus, molestie nisi eget, pharetra eros.
-          Morbi sed purus id mauris convallis scelerisque. Suspendisse potenti. Proin congue nibh sed augue placerat laoreet. Nunc vel eros in metus ultricies placerat. Mauris non suscipit nibh, ac tincidunt mi. Nunc vehicula dapibus nisi, vitae venenatis orci. Praesent ut sodales quam. Duis finibus velit sapien, ac imperdiet magna luctus in.
-          Curabitur dictum orci sapien, non ultrices orci laoreet vel. Phasellus hendrerit sit amet sem quis hendrerit. Aliquam placerat sapien molestie elit tincidunt, nec accumsan mi luctus. Maecenas elementum arcu lorem, luctus sagittis leo efficitur id. Maecenas ultrices sed metus sit amet interdum. Nullam mattis velit sit amet facilisis blandit. Mauris nulla tortor, blandit eget dolor sed, consequat mattis sem. Vestibulum eget nunc et nulla commodo aliquet et nec tellus. Nullam pharetra, lorem at lobortis finibus, dolor nisi aliquam felis, quis ultrices justo dolor feugiat sapien. Donec congue maximus odio id tempus. Nulla consectetur, massa ut posuere ullamcorper, purus ex ullamcorper dolor, non sollicitudin leo sem mattis elit. In sodales quam at sapien blandit auctor. Praesent venenatis justo nunc, et scelerisque libero sagittis sit amet. Sed commodo ex a sem commodo pellentesque ut id libero.
-          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque consequat dolor in nunc fermentum varius. Sed semper iaculis iaculis. Mauris in convallis nisi. Nulla in dolor eu libero volutpat condimentum ac sit amet arcu. Phasellus ligula mi, congue nec venenatis ut, auctor vitae mi. Sed suscipit odio et dignissim hendrerit. Ut finibus nibh et tortor gravida luctus. Nulla consequat tempor augue, a blandit nisl dapibus ac.
-        </p>
+      <div className="body border-t border-secondary flex flex-col items-center w-full max-w-4xl px-4 py-8">
+        <h1 className="body-title text-2xl text-terciary pb-5">{blog_title}</h1>
+        <p className="body-text text-sm text-justify text-secondary">{body_text}</p>
+        <img src={img_src} alt="image-prueba" className="body-img w-40" />
       </div>  
     );
 }

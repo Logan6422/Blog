@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 
 export default function Homepage() {
   return (
-    <section className="hp-container flex flex-col items-center h-screen w-full">
+    <section className="hp-container flex flex-col items-center h-screen w-full min-h-screen">
       <Header/>
       <Body/>
       <Footer/>

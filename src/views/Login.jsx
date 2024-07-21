@@ -1,7 +1,13 @@
-
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import LoginComponent from "../components/LoginComponent"
 
 export default function Login(){
     return(
-        <h1>hola</h1>
+        <section className="hp-container flex flex-col items-center h-screen w-full min-h-screen">
+            <Header/>
+            <LoginComponent/>
+            <Footer/>
+        </section>  
     );
 }
