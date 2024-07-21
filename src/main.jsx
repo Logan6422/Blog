@@ -5,8 +5,8 @@ import Homepage from './views/Homepage'
 import './styles/index.css'
 import AboutMe from './views/AboutMe'
 import Login from './views/Login'
+import ActualBlogs from './views/ActualBlogs'
 import ViewBlog from './views/ViewBlog'
-
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,7 +15,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Homepage/>}/>
         <Route path="/AboutMe" element={<AboutMe/>}/>
         <Route path="/Login" element={<Login/>}/>
-        <Route path="/ViewBlog" element={<ViewBlog/>}/>
+        <Route path="/ActualBlogs" element={<ActualBlogs/>}/>
+        <Route path='/ViewBlog' element={<ViewBlog/>}/>
       </Routes>
     </Router>
   </React.StrictMode>,

@@ -1,21 +1,18 @@
-
-export default function LoginComponent(){
-    return(
-        <>
-             <h1 className="login-text text-terciary text-2xl p-4 ">Who the fuck are you?? Identify Yourself</h1>
-            <form action="admin-login" className="flex flex-col border border-terciary rounded-md p-5 gap-10 text-secondary">
-                <label htmlFor="user_name">
-                    <h1 className="user_name-title">USERNAME</h1> 
-                    <input type="text"  id="user_name" className="user_name border rounded-sm"></input>
+export default function LoginComponent() {
+    return (
+        <div className="flex justify-center items-center h-screen">
+            <form action="admin-login" className="flex flex-col gap-5 border border-terciary rounded-md p-5 text-secondary w-full max-w-md">
+                <h1 className="login-text text-terciary text-2xl p-4 text-center">Who the fuck are you?? Identify Yourself</h1>
+                <label htmlFor="user_name" className="flex flex-col">
+                    <h2 className="user_name-title">USERNAME</h2>
+                    <input type="text" id="user_name" className="user_name border border-gray-300 rounded-sm p-2" />
                 </label>
-                <label htmlFor="user_password">
-                <h1 className="user_password-title">PASSWORD</h1> 
-                 <input type="text"  id="user_password" className="user_pass"></input>
+                <label htmlFor="user_password" className="flex flex-col">
+                    <h2 className="user_password-title">PASSWORD</h2>
+                    <input type="password" id="user_password" className="user_pass border border-gray-300 rounded-sm p-2" />
                 </label>
-                <div className="flex justify-center">
-                        <button className="login-submit bg-terciary text-black w-20">Login</button>
-                    </div>
+                <button type="submit" className="login-submit bg-terciary text-black w-full py-2 rounded-md">Login</button>
             </form>
-        </>
+        </div>
     );
 }

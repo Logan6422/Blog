@@ -8,9 +8,9 @@ export default function Header(){
         </h1>
         <ul className="navbar flex justify-center space-x-5 text-terciary">
             <li className="navbar-item cursor-pointer hover:underline"><Link to="/">Home</Link></li>
-            <li className="navbar-item cursor-pointer hover:underline"><Link to="/ViewBlog">Posts</Link></li>
+            <li className="navbar-item cursor-pointer hover:underline"><Link to="/ActualBlogs">Posts</Link></li>
             <li className="navbar-item cursor-pointer hover:underline"><Link to="/Login">Add Post</Link></li>
-            <li className="navbar-item cursor-pointer hover:underline"><Link to="/AboutMe">About me</Link></li>
+            <li className="navbar-item cursor-pointer hover:underline"><Link to="/ViewBlog">About me</Link></li>
         </ul>
     </div>
     );
